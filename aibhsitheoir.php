@@ -24,7 +24,7 @@ class aibhsitheoir {
 		wp_register_script('aibhsitheoir-js',plugins_url( 'aibhsitheoir.js', __FILE__ ));
 		//register css
 		wp_register_style('aibhsitheoir-css',plugins_url( 'aibhsitheoir.css', __FILE__ ));
-		add_action( 'wp_enqueue_scripts', array($this, 'load_highlighting');
+		add_action( 'wp_enqueue_scripts', array($this, 'load_highlighting') );
 	}
 
 	public static function activate() {
